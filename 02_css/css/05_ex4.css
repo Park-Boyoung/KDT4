@@ -1,0 +1,23 @@
+h2{
+    color: palegreen;
+}
+.item{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(#FFE600, #FF0080, #DB20DB);
+    margin: 30px;
+}
+
+.white{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(img/small_img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: 10px;
+}

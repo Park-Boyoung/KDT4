@@ -1,0 +1,18 @@
+.square img [alt='pooh']{
+    width: 50px;
+    height: 50px;
+}
+
+.overflow-visible{
+    overflow: visible;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.overflow-auto{
+    overflow: auto;
+}

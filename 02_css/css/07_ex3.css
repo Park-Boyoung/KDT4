@@ -1,0 +1,15 @@
+p{
+    position: absolute;
+    animation: english 3s linear;
+}
+
+@keyframes english{
+    0%{
+        left: 100%;
+        width: 500px;
+    }
+    100%{
+        left: 0%;
+        width: 100%;
+    }
+}

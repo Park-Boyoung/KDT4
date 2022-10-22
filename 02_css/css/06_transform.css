@@ -1,0 +1,73 @@
+.img-box{
+    background-color: aquamarine;
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+
+img{
+    border: 1px solid gold;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+img{
+    transition: 1s;
+    /* 1.skew
+    객체를 기울임*/
+    /* transform: skewX(30deg); */
+    /* transform: skewY(30deg); */
+    /* transform: skew(30deg,30deg); */
+
+    /* 2.scale */
+    /* transform: scaleX(2); */
+    /* transform: scaleY(0.5); */
+    /* transform: scale(2,0.5); */
+
+    /* 3.translate */
+    /* transform: translateX(100px); */
+    /* transform: translateY(100px); */
+    /* transform: translate(-100px,-50px); */
+
+    /* 4.rotate */
+    /* transform: rotate(-45deg); */
+
+    /* transform: rotateY(-45deg); */
+    /* transform: perspective(500px) rotateX(180deg); */
+    /* backface-visibility: hidden; */
+
+    transform: translateX(200px) scaleX(2) skewY(30deg);
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: .4s;
+    /* transition: .5s linear; */
+    /* transition-duration: 2s;
+    transition-delay: 2s;
+    transition-property: width;
+    transition-timing-function: ease-in-out; */
+}
+
+.box1:hover{
+    /* transition: background-color .5s linear; 서서히 */
+    background-color: pink;
+    height: 120px;
+    width: 120px;
+}
+
+.box2:hover{
+    background-color: aqua;
+    transform: translateX(200px) scale(2);
+}
+
+.box:hover{
+    opacity: 0; /* opacity 0~1까지 트랜지션, display none은 트랜지션x */
+}

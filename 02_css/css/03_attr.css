@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+@font-face {
+    font-family: 'ulsanjunggu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/ulsanjunggu.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.googlefonts{
+    font-family: 'ulsanjunggu', sans-serif;
+}
+
+
+.container .sentences {
+    font-size: bold
+;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

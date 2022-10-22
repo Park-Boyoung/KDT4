@@ -1,0 +1,27 @@
+body{
+    height: 1000px;
+}
+
+.box{
+    width: 200px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.background-image{
+    background-image: url(.img/pooh.png);
+    /* background-repeat: no-repeat; */
+    /* background-repeat: repeat-x;
+    background-repeat: repeat-y; */
+
+    /* background-position: center;
+    background-position: center top; */
+
+    /* background-position: 3rem 5rem; */
+
+    /* background-size: contain; */
+    /* background-size: cover; */
+    background-size: 90px;
+
+    background-attachment: fixed;
+}

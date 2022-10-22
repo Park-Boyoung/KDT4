@@ -1,0 +1,66 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: relative; /*나를 기준으로 움직임*/
+
+    animation-name: box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+
+}
+
+@keyframes box{
+    0%{
+        left: 0px;
+    }
+    25%{
+        left: 200px;
+    }
+    50%{
+        left: 400px;
+    }
+    75%{
+        left: 200px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+/* 
+animation 단축속성
+animation: name duration timing-function delay iteration-count direction */
+
+.bounceball1{
+    position: relative;
+    left: 100px;
+    top: 0px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    animation: bounce1 1s ease-out infinite reverse;
+}
+@keyframes bounce1 {
+    to {top: 0px;}
+    from {top:300px;}
+}
+
+.bounceball2{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    position: absolute; /*body기준*/
+    border-radius: 50%;
+    animation: bounce2 2s infinite;
+}
+@keyframes bounce2{
+    from,to{
+        bottom: 0;
+        animation-timing-function: ease-out;}
+    50%{
+        bottom: 300px;
+        animation-timing-function: ease-in;}
+}

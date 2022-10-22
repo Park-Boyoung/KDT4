@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자3</title>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            background-color: skyblue;
+        }
+
+        /* hover */
+        .div1:hover{
+            background-color: orange;
+            width: 150px;
+        }
+
+        /* active */
+        .div1:active{
+            background-color: aquamarine;
+            height: 150px;
+        }
+
+        /* focus */
+        input:focus{
+            background-color: purple;
+            color: white;
+            outline-color: aqua;
+        }
+        /* visited */
+        .link > a:visited{
+            color: chartreuse;
+        }
+
+        /* last first nth */
+        .zoo > *{
+            background-color: green;
+            color: white;
+            font-size: 20px;
+        }
+        .zoo li:last-child{
+            background-color: yellow;
+            color: black;
+        }
+
+        .zoo *:nth-child(2){
+            background-color: black;
+            color: white;
+        }
+        .zoo *:nth-child(2n){
+            background-color: aqua;
+        }
+
+        .zoo *:first-child{
+            background-color: pink;
+        }
+
+        .zoo *:not(div){
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h3>가상 클래스 선택자</h3>
+
+    <!--hover-->
+    <div class="div1">
+        <span>div1</span>
+    </div>
+    
+    <input type="text">
+    <div class="link">
+        <a href="#">네이버로 이동</a>
+        <a href="#">다음으로 이동</a>
+    </div>
+
+
+    <!--
+        E:first-child {}
+        E:last-child {}
+        E:nth-child(n) {}
+    -->
+    <ul class="zoo">
+        <h4>동물원입니다.</h4>
+        <div>판다</div>
+        <li>원숭이</li>
+        <li>토끼</li>
+        <li>사자</li>
+        <li>호랑이</li>
+        <li>코끼리</li>
+        <div>코알라</div>
+        <li>기린</li>
+    </ul>
+</body>
+</html>

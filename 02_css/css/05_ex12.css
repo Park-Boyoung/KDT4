@@ -1,0 +1,37 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: black;
+}
+
+.item1{
+    background-color: red;
+}
+
+.item2{
+    background-color: yellow;
+    top: 30;
+    left: 30;
+}
+
+.item3{
+    background-color: green;
+    top: 60px;
+    left: 60px;
+}
+
+.lion1{
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+.lion2{
+    
+    background-size: contain;
+    background-position: 100px 30px;
+}
+
+.lion3{
+    background-size: cover;
+    background-position: 10rem 4rem;
+}
